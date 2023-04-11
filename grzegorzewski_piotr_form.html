@@ -8,21 +8,20 @@
         div {
         width: 400px;
 }
-label {
-    display: inline-block;
-    width: 100px;
+        label {
+        display: inline-block;
+        width: 100px;
 }
     </style>
 </head>
-
 <body>
     <br>
     <div class="form">
         <form method="post" action="mailto:piotr.grzegorzewski@microsoft.wsei.pl?subject=formularz">
         <label for="imie">Imię: </label>
-        <input name="imie" id="imie" placeholder="Piotr"><br>
+        <input name="imie" id="imie" placeholder="Piotr" maxlength="25"><br>
         <label for="nazwisko">Nazwisko: </label>
-        <input name="nazwisko" id="nazwisko" placeholder="Grzegorzewski"><br>
+        <input name="nazwisko" id="nazwisko" placeholder="Grzegorzewski" maxlength="25"><br>
         <label for="data">Data: </label>
         <input name="data" type="date" id="data"><br>
         <label>Miasto: </label>
@@ -37,10 +36,10 @@ label {
         <label for="password">Podaj hasło: </label>
         <input name="password" type="password" id="password"><br>
         <p>Podaj plec:</p>
-        <input type="radio" id="html" name="plec" value="HTML">
-        <label for="html">Męzczyzna</label><br>
-        <input type="radio" id="css" name="plec" value="CSS">
-        <label for="css">Kobieta</label><br>
+        <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">
+        <label for="mezczyzna">Męzczyzna</label><br>
+        <input type="radio" id="css" name="plec" value="kobieta">
+        <label for="kobieta">Kobieta</label><br>
     </div><br>
     <fieldset style="width:300px">
         <legend>Co lubisz robić w wolnym czasie?</legend> 
