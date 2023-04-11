@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>WSEI - Piotr Grzegorzewski - 2023</title>
+    <style>
+        div {
+        width: 400px;
+}
+label {
+    display: inline-block;
+    width: 100px;
+}
+    </style>
 </head>
 
 <body>
@@ -30,5 +39,28 @@
         <label for="html">Męzczyzna</label><br>
         <input type="radio" id="css" name="plec" value="CSS">
         <label for="css">Kobieta</label><br>
-    </div>
+    </div><br>
+    <fieldset style="width:300px">
+        <legend>Co lubisz robić w wolnym czasie?</legend> 
+        <table>
+            <form action="/action_page.php">
+                <input type="checkbox" id="wolnyczas1" name="wolnyczas1" value="games">
+                <label for="vehicle1"> Grać w gry</label><br>
+                <input type="checkbox" id="wolnyczas2" name="wolnyczas2" value="coding">
+                <label for="vehicle2"> Programować</label><br>
+                <input type="checkbox" id="wolnyczas3" name="wolnyczas3" value="trip">
+                <label for="vehicle3"> Podróżować</label><br><br>
+                <input type="submit" value="Submit">
+              </form>
+        </table>
+      </fieldset><br>
+      Uwagi:<br>
+      <form action="/action_page.php">
+        <p><label for="w3review">Review of W3Schools:</label></p>
+        <textarea id="w3review" name="w3review" rows="4" cols="40" placeholder="Polecam!"></textarea>
+        <br>
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+
+      </form>
 </body>
