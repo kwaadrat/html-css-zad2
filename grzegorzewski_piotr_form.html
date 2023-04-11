@@ -16,7 +16,9 @@ label {
 </head>
 
 <body>
+    <br>
     <div class="form">
+        <form method="post" action="mailto:piotr.grzegorzewski@microsoft.wsei.pl?subject=formularz">
         <label for="imie">Imię: </label>
         <input name="imie" id="imie" placeholder="Piotr"><br>
         <label for="nazwisko">Nazwisko: </label>
@@ -35,28 +37,24 @@ label {
         <label for="password">Podaj hasło: </label>
         <input name="password" type="password" id="password"><br>
         <p>Podaj plec:</p>
-            <input type="radio" id="html" name="plec" value="HTML">
+        <input type="radio" id="html" name="plec" value="HTML">
         <label for="html">Męzczyzna</label><br>
         <input type="radio" id="css" name="plec" value="CSS">
         <label for="css">Kobieta</label><br>
     </div><br>
     <fieldset style="width:300px">
         <legend>Co lubisz robić w wolnym czasie?</legend> 
-            <form action="/action_page.php">
                 <input type="checkbox" id="wolnyczas1" name="wolnyczas1" value="games">
                 <label for="wolnyczas1"> Grać w gry</label><br>
                 <input type="checkbox" id="wolnyczas2" name="wolnyczas2" value="coding">
                 <label for="wolnyczas2"> Programować</label><br>
                 <input type="checkbox" id="wolnyczas3" name="wolnyczas3" value="trip">
                 <label for="wolnyczas3"> Podróżować</label><br><br>
-              </form>
-      </fieldset><br>
-      Uwagi:<br>
-      <form action="/action_page.php">
+    </fieldset><br>
+    Uwagi:<br>
         <textarea id="review" name="review" rows="4" cols="40" placeholder="Polecam!"></textarea>
         <br>
         <input type="submit" value="Wyślij">
         <input type="reset" value="Wyczyść">
-
       </form>
 </body>
